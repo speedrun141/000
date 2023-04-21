@@ -496,3 +496,82 @@ rel="shortcut icon" type="image/x-icon">
     </script>
 </details>
 <img src="https://raw.githubusercontent.com/photo-host/photo-host-/main/1677492217.gif" style="width: 100%; height: auto;">
+<style>
+  details {
+    margin: 5px 0 10px;
+  }
+
+  details > summary {
+    background: #39faa2;
+    color: #ff0000;
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+    text-align: left;
+    box-shadow: 1px 1px 2px #571717;
+  }
+
+  details > summary::-webkit-details-marker {
+    background: #444;
+    color: #912828;
+    background-size: contain;
+    transform: rotate3d(0, 0, 1, 90deg);
+    transition: transform 0.25s;
+  }
+
+  details[open] > summary::-webkit-details-marker {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+
+  details[open] > summary {
+    background: #39faa2;
+  }
+
+  details[open] > summary ~ * {
+    animation: reveal 0.5s;
+  }
+
+  .tpt {
+    background: #444;
+    color: #fff;
+    margin: 5px 0 10px;
+    padding: 5px 10px;
+    line-height: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px gray;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+</style>
+
+<details>
+  <summary><span style="font-size:0.9px"><p style="text-align:center"><span style="font-size:26px">스팀</summary>
+  <div class="tpt"><!DOCTYPE html>
+    <html>
+    <body>
+    <input type="text"
+           value="AnJTYaK]0]lQI0dYmcx]BKeSQvxjPrrvQL6hj9603rQuiPmbQZ1ixgbNtnriRaFwvbZlY5kh)nq]FA82e6sadTj7QOi]1o6SWhKEpK0]wwHuYEot314RFbW2b]5jKwDtYu1V4IsK)4k)pwJaorFbUsRBEd8cwG5dLP4VO1swan82JEPFjmvTPlEpM0iUQ2bZ)jUj0weEebwRAROkner]74OgZTkCEbdWeG9cUHG9ChzYqbGlEM8Vux91B)k82sBcJo1DmSG2ouT]5dpGXt]oRuVzMA!"
+           id="myInput">
+    <button onclick="copyToClipboard()">복사하기</button>
+
+    <script>
+      function copyToClipboard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("복사한 문자열 : " + copyText.value);
+      }
+    </script>
+</details>
